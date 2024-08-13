@@ -10,6 +10,7 @@ env:
 jobs:
   docker_build:
     runs_on: ubuntu-latest
+    
     steps:
     - name: Docker Image Build
       run: echo docker build -t ${{ env.CONTAINER_REGISTRY }}/${{ vars.DOCKER_USERNAME }}/$IMAGE_NAME:latest
